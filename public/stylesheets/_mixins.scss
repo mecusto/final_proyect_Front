@@ -1,0 +1,118 @@
+@mixin textos {
+    font-size-adjust: 8px;
+    font-family: 'Cairo', sans-serif;
+}
+
+@mixin areaText {
+    font-size-adjust: initial;
+    letter-spacing: 1px;
+}
+
+@mixin displayFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin logo {
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(248, 248, 248, 0);
+    max-width: 20%;
+    border-radius: 5%;
+    box-shadow: 7px 17px 45px 12px black !important;
+}
+
+@mixin usersBox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    h3 {
+        color: white !important;
+        margin: 5%;
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: 7px 8px 8px 2px rgba(0, 0, 0, 0.36) !important;
+    -moz-box-shadow: 7px 8px 8px 2px rgba(0, 0, 0, 0.36) !important;
+    box-shadow: 7px 8px 8px 2px rgba(0, 0, 0, 0.36) !important;
+    border-radius: 5px;
+}
+
+@keyframes appear {
+    0% {
+        display: none;
+    }
+    100% {
+        display: inherit;
+    }
+}
+
+@keyframes scale-display {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes loginAppear {
+    0% {
+        margin-top: 100vh;
+    }
+    50% {
+        margin-top: 80vh;
+    }
+    100% {
+        margin-top: 60vh;
+    }
+}
+
+@keyframes logoAppear {
+    0% {
+        height: 0vh;
+        width: 0vw;
+    }
+    25% {
+        height: 5vh;
+        width: 7.5vw;
+    }
+    50% {
+        height: 10vh;
+        width: 15vw;
+    }
+    75% {
+        height: 15vh;
+        width: 22.5vw;
+    }
+    100% {
+        height: 20vh;
+        width: 30vw;
+    }
+}
+
+@mixin links {
+    a:active {
+        color: $white;
+        text-decoration: none
+    }
+    a:visited {
+        color: $color1;
+        text-decoration: none
+    }
+    a:hover {
+        color: $white;
+        text-decoration: underline
+    }
+}

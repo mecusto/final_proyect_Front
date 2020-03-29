@@ -1,0 +1,10 @@
+//Solo incluir subarchivos en el style principal
+//Siempre primero variables, después mixin y finalmente los secundarios
+@import "variables.scss";
+@import "mixins.scss";
+@import "style2.scss";
+@import "media.scss";
+// 
+// $ npm i --save @fortawesome/fontawesome-svg-core
+// $ npm i --save @fortawesome/free-solid-svg-icons
+// $ npm i --save @fortawesome/react-fontawesome

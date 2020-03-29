@@ -1,0 +1,394 @@
+.body {
+  background-color: $white;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.loginBox {
+  background-color: #707070ec;
+}
+
+.buttonLogin {
+  max-width: 21% !important;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    text-align: center;
+  }
+}
+
+.initialView {
+  background-image: url("https://www.cuentafacto.es/wp-content/uploads/2016/06/salon-casa-muebles.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bigBoxReport {
+  background-color: $white;
+  height: 100vh;
+  // @include shadow;
+}
+
+.fondoReport {
+  background-color: rgb(209, 209, 209);
+}
+
+.navbarCss {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: right;
+  max-height: 40px !important;
+}
+
+.navbarUnlogged {
+  background-color: transparent !important;
+  display: flex;
+  justify-content: right;
+  a {
+    color: $white !important;
+  }
+}
+
+.boxLogo {
+  @include logo;
+  animation-name: logoAppear;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.miniLogo {
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(248, 248, 248, 0);
+  height: 80px;
+  width: 150px;
+}
+
+.positionLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.iconBotton {
+  padding: 0.5rem 1rem;
+  height: 46px;
+  width: 62px;
+}
+
+.emptyBox {
+  height: 20vh;
+  width: 100wv;
+}
+
+.emptyBox2 {
+  height: 5vh;
+  width: 100wv;
+}
+
+.boxFotos {
+  @include displayFlex;
+}
+
+.positionLogin {
+  @include shadow;
+  @include textos;
+  animation: loginAppear;
+  animation-duration: 3s;
+  // animation-delay: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  // margin-top: 60vh;
+  background-color: #707070ec;
+  color: $white !important;
+  a {
+    color: $white !important;
+    font-style: italic;
+    text-justify: right;
+  }
+}
+
+.edit-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #eeaa11;
+}
+
+.registerBox {
+  @include shadow;
+  height: fit-content;
+  display: block;
+  margin-top: 30vh;
+  margin: 0 auto;
+  background-color: #707070ec;
+}
+
+.warningRed {
+  color: $warning_red;
+  font-size: 12;
+}
+
+.invisible {
+  display: none;
+  visibility: hidden;
+}
+
+.userDetails {
+  @include usersBox;
+  background-color: $color1;
+  h3 {
+    text-transform: none !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+
+.tenantDetails {
+  @include usersBox;
+  background-color: $color2;
+  h3 {
+    text-transform: none !important;
+    letter-spacing: 0.1rem !important;
+  }
+}
+
+.formRow {
+  margin-top: 5px;
+  height: 80px !important;
+  min-height: 80px !important;
+}
+
+.buttonBox {
+  background-color: $white;
+}
+
+.photo_profile {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+.loggedView {
+  background-color: $white;
+}
+
+.property-button {
+  background-color: $color4 !important;
+  color: $white !important;
+}
+
+.property-button:hover {
+  background-color: rgb(255, 77, 98) !important;
+  color: $white !important;
+}
+
+.updatePropertyForm {
+  min-height: 520px !important;
+}
+
+.property_details {
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  div {
+    background-color: $white;
+  }
+  h4 {
+    background-color: $white;
+  }
+}
+
+.previewImage-container {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.mainProperty:hover {
+  z-index: 10 !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0px 10px 13px -7px #000000,
+    1px 10px 25px 5px rgba(121, 121, 121, 0.85);
+  // box-shadow:15px 15px rgba(0, 0, 0, 0.534) ;
+}
+
+.propertiesDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // overflow: scroll;
+  //  max-height:
+}
+
+.dialog {
+  box-shadow: 0 4px 6px -6px $black;
+  position: static;
+  right: 20%;
+  top: 10%;
+  z-index: +1;
+}
+
+.textArea {
+  @include areaText;
+  min-height: 20vh !important;
+  min-width: 100% !important;
+}
+
+.listProfesional {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.navbarItems {
+  font-weight: 10px;
+  font-size: 18px;
+}
+
+.divNewIncidencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  small {
+    font-style: italic;
+    margin-left: 3px;
+  }
+}
+
+.reports {
+  overflow-y: scroll;
+  // background-color: $white;
+  min-height: 250px;
+}
+
+//-----------------ANIMATIONS--------------
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+.slide-enter,
+.slide-exit {
+  transition: transform 800ms ease-out;
+}
+
+.slide-enter {
+  transform: translateX(100%);
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateX(0%);
+}
+
+.slide-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  transform: translateX(-100%);
+}
+
+// ------ chat--------
+.rcw-conversation-container > .rcw-header {
+  background-color: color1;
+  color: white;
+}
+
+.rcw-conversation-container .rcw-title {
+  color: white;
+}
+
+@media only screen and (max-width: 575px) {
+  .userDetails {
+    // min-height: 50vh !important;
+    height: 48vh !important;
+  }
+
+  .photo_profile {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+  }
+  .nameBox h3 {
+    font-size: 14px !important;
+  }
+
+  .iconbotton1 .iconbotton2 {
+    position: relative !important;
+    left: 500px !important;
+  }
+
+  .emptyBox2 {
+    display: none;
+  }
+
+  .houses {
+    width: 130% !important;
+  }
+
+  .card-img,
+  .card-img-top {
+    width: 130% !important;
+  }
+
+  .ocultar {
+    display: none !important;
+  }
+
+  .property-button {
+    width: 96% !important;
+  }
+
+  .storage {
+    display: none !important;
+  }
+
+  .responsive {
+    display: flex !important;
+  }
+
+  .my-btn {
+    margin: 0px !important;
+  }
+
+  .dissapear{
+    display:none !important;
+  }
+}

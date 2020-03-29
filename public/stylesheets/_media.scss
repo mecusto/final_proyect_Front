@@ -1,0 +1,10 @@
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 568px) {
+    .parallaxIndex {
+        min-height: 10vh !important;
+        background-attachment: scroll;
+    }
+}
